@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Encriptador de Textos</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="contenedor__cabecera">
+        <div class="cabecera__division">
+          <a href="https://www.aluracursos.com/" target="_blank">
+            <img
+              class="logoDeAlura"
+              src="./assets/LogoAlura.png"
+              alt="Logo de Alura"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article class="conttenedor">
+        <section class="left" id="left">
+          <textarea
+            class="entradaTextArea"
+            id="entrada__texto"
+            placeholder="Ingrese el texto aquí"
+            autofocus
+          ></textarea>
+          <div class="content_botones">
+            <span class="informacion">
+              <img
+                src="./assets/signoExclamacion.png"
+                alt="Signo de exclamacion"
+              />
+              Solo letras minúsculas y sin acentos
+            </span>
+            <div class="botones">
+              <button id="btn__encriptar" class="btn__encriptar">
+                Encriptar
+              </button>
+              <button id="btn__desencriptar" class="btn__desencriptar">
+                Desencriptar
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="seccion__derecha" id="derecho">
+          <img
+            id="persona"
+            class="persona"
+            src="./assets/persona.png"
+            alt="Ningún mensaje fue encontrado. Ingresa el texto que desees encriptar o desencriptar."
+          />
+          <textarea
+            id="texto__final"
+            class="texto__final"
+            placeholder="Ningún mensaje fue encontrado"
+          ></textarea>
+          <p id="texto__informativo" class="informacion">
+            Ingresa el texto que desees encriptar o desencriptar.
+          </p>
+          <button class="btn__copiar accion_ocultar" id="btn__copiar">
+            Copiar
+          </button>
+        </section>
+      </article>
+    </main>
+    
+    <footer class="footer">
+      <div class="copyright" target="_blank">
+        &copy; 2024, developed by Jhonatan Mendoza
+      </div>
+      <div>
+        <a href="https://github.com/ch3557er" target="_blank">
+          <img class="links" src="./assets/github.png" />
+        </a>
+        <a href="https://www.linkedin.com/in/ch3557er/" target="_blank">
+          <img class="links" src="./assets/linkedin.png" />
+        </a>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
